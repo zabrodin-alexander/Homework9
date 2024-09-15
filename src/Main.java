@@ -1,10 +1,12 @@
 import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
+        
         //task 1
         System.out.println("Task 1");
 
-        int[] one = {1, 2, 3};
+        int[] one = {1, 2, 3, 4, 5};
         int sum = 0;
         for (int element : one) {
             sum += element;
@@ -14,7 +16,7 @@ public class Main {
         //task 2
         System.out.println("Task 2");
 
-        int[] two = {1, 2, 3};
+        int[] two = {1, 2, 3, 4, 5};
         int max = -1;
         for (final int current : two) {
             if (current > max) {
@@ -22,7 +24,7 @@ public class Main {
             }
         }
         System.out.println("Максимальная сумма трат за неделю составила " + max + " рубля.");
-        int[] three = {1, 2, 3};
+        int[] three = {1, 2, 3, 4, 5};
         int min = 1;
         for (final int current : three) {
             if (current < min) {
@@ -39,7 +41,8 @@ public class Main {
         for (int element : four) {
             sum += element;
         }
-        System.out.println("Средняя сумма трат за месяц составила " + (sum / 4f) + " рублей");
+        double average = sum / four.length;
+        System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
 
         //task 4
         System.out.println("Task 4");
