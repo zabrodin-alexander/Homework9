@@ -41,7 +41,7 @@ public class Main {
         for (int element : four) {
             sum += element;
         }
-        double average = sum / four.length;
+        double average = (double) sum / four.length;
         System.out.println("Средняя сумма трат за месяц составила " + average + " рублей");
 
         //task 4
